@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            
+        }
+        #detail,#navigation{
+            padding-top: 10px;
+            width:60%;
+            margin: auto; /* To position center*/
+            padding-bottom: 10px;
+        }
+        #navigation{
+            padding-top: 20px;
+        }
+        .id1,.id2{
+            text-decoration: none;
+            color: grey;
+            margin-left: 20px;
+        }
+        .id2{
+        float: right;
+        }
+        .id2 img{
+            transform: translateY(5px);
+        }
+       #line{
+           
+           width: 60%;
+           margin: auto; /* To position center.*/
+           border-bottom: 2px solid grey;
+}
+.menu{
+    float: right;
+    text-decoration: none;
+    margin-left: 15px;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+.menu:hover{
+    border-bottom: 2px solid orange;
+    
+}
+#cover{
+    width:100%;
+    height: 400px;
+    background:linear-gradient(rgba(41, 38, 38,0.5),rgba(54, 46, 46,0.5)) ,url('images/cover2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#section5{
+    width:100%;
+    height: 400px;
+    background:linear-gradient(to right,rgba(175, 82, 82,0.4),rgba(131, 85, 85, 0.4)) ,url('images/cover9.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#subcover{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 25%;
+    left: 30%;
+}
+#subcover h1{
+    margin-bottom: 20px;
+}
+.subcover2{
+    text-decoration: none;
+    margin-left: 30px;
+    border-right:2px solid white ;
+    padding-right: 10px;
+}
+#subcover h1{
+    color: white;
+}
+.input{
+margin-left: 30px;
+width:300px;
+height: 25px;
+border-radius: 4px;
+border: 2px solid white;
+padding: 5px;
+}
+
+.button{
+color: white;
+background-color: rgb(224, 159, 37);
+padding:10px;
+border-radius: 5px;
+border: none;
+}
+#section2{
+    margin-top: 15px;
+}
+.blocks{
+    margin-left:8px;
+    width: 24%;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+}
+.section2para{
+    position: absolute;
+    width: 70%;
+    top: 70%;
+    left: 25%;
+    color: white;
+}
+#section3 h2{
+    text-align: center;
+}
+#section3{
+    padding-top: 30px;
+    width: 75%;
+    margin: auto;
+   
+}
+#section3blocks{
+width: 100%;
+min-height: 400px;
+}
+.blocks3{
+    width: 30%;
+    min-height:400px;
+    display: inline-block;
+}
+#line2{
+    
+    width: 20px;
+    height: 5px;
+    background-color: rgba(238, 160, 14, 0.952);
+}
+.blocks3 h3 ,.block4 h3{
+    color: orange;
+    padding-bottom: 10px;
+}
+ #p1{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+ #p3{
+    padding-bottom: 10px;
+}
+.span{
+    color: grey;
+}
+#b3{
+    transform: translateY(-35px);
+}
+#section4{
+    width: 75%;
+    margin: 60px auto;
+    position: relative;
+    height: 500px;
+}
+.block4{
+    width:30% ;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+}
+#allproducts{
+position: relative;
+top: -40px;
+left: 40%;
+  background-color: rgb(240, 182, 75); 
+  border-radius: 5px;
+  padding: 10px; 
+  color: white;
+  border: none;
+  
+}
+
+#realstate{
+    width: 80%;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    top: 30%;
+    left: 7%;
+}
+#realstate h3{
+    padding-bottom: 20px;
+}
+.sec1{
+    margin-top: 40px;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+.sec1 h3{
+padding: 10px;
+}
+.sec1 img{
+padding: 5px;
+background-color: orange;
+border-radius: 50%;
+}
+#Agentsection{
+    padding-top: 50px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+#Agents{
+    width:100%;
+padding-top: 40px;
+}
+.Agent1{
+    width: 22%;
+    margin-left:2%;
+    height:200px;
+    display: inline-block;
+    text-align: left;
+}
+.Agent1 img{
+transform: translateY(5px);
+}
+#Testimonials{
+    margin-top: 90px;
+    width: 100%;
+    height: 350px;
+    background-color: rgba(172, 161, 161,0.5)
+}
+#Testimonials h1{
+    text-align: center;
+   padding-top: 20px;
+margin-bottom: 40px;
+}
+#feedbacks{
+width: 75%;
+margin: auto;
+}
+.feeds{
+width: 22%;
+font-size: small;
+font-style: italic;
+display: inline-block;
+padding: 20px;
+}
+.feeds img{
+    border-radius: 50%;
+    float: left;
+}
+.feeds p{
+    padding-left: 5px;
+    margin-left:50px;
+}
+#contact{
+    background:linear-gradient(rgba(12, 12, 12, 0.5),rgba(12, 12, 12, 0.5)), url('images/cover10.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    
+}
+#contact h1{
+    text-align: center;
+    padding-top: 30px;
+}
+.form{
+    position: absolute;
+    width:70%;
+    top: 30%;
+left: 36%;
+}
+
+input,textarea{
+    
+    border: 3px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+}
+textarea{
+    width: 44%;
+}
+#message{
+    background-color: rgb(240, 182, 75); 
+  border-radius: 5px;
+  padding: 10px; 
+  color: white;
+  position: relative;
+  left: 10%;
+}
+.inp{
+    margin-right: 10px;
+}
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+#footer{
+    width: 100%;
+    height: 250px;
+    background-color: grey;
+    color: white;
+}
+.foot{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top:40px;
+}
+.foot1{
+    margin-top:75px ;
+    text-align: center;
+}
+.foot img{
+    color: white;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: white;
+}
+.foot3{
+    margin-left: 10px;
+    
+}
+.foot h4{
+    padding-bottom: 10px;
+}
+.foot2{
+    width: 30%;
+    
+}
+#subscribe{
+    padding:12px;
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+    transform: translateX(-4px);
+}
+#email{
+    background-color: rgba(0, 0, 0, 0.342);
+    padding: 8px;
+    transform: translateY(15px);
+    border: 1px solid black;
+    border-radius: 0%;
+    color: white;
+}
+.foot4 h4{
+    margin-bottom: 14px;
+}
+.foot1 h4{
+margin-bottom: 10px;
+}
+#allagents{
+    position: relative;
+    margin-top: 40px;
+    margin-left:45%;
+    padding: 7px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+#dash{
+    width: 50px;
+    height: 2px;
+    background-color: orange;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+body{
+    margin-right: (-50px);
+}
+    </style>
+</head>
+<body>
+    <div id="detail">
+        <a href="#" class="id1">Login</a>
+        <a href="#" class="id1">Register</a>
+        <a href="#" class="id2"><img src="images/image1.png" width="20px" height="20px">gautambgp98@gmail.com</a>
+        <a href="#" class="id2"><img src="images/image2.png" width="20px" height="20px">8709047833</a>
+    </div>
+    <p id="line"></p>
+   <div id="navigation">
+<img src="https://cdn.pixabay.com/photo/2021/09/20/21/32/lake-6641880__480.jpg" width="100px" height="50px">
+<a href="#"  class="menu">HOME</a>
+<a href="#" class="menu">CATALOG</a>
+<a href="#" class="menu">SUBMIT PROPERTY</a>
+<a href="#" class="menu">SERVICES</a>
+<a href="#" class="menu">ABOUT</a>
+<a href="#" class="menu">CONTACTS</a>
+   </div>
+   <div id="cover">
+<div id="subcover">
+    <h1>Professional realtor works for you</h1>
+    <div id="subcover2">
+        <a href="#" class="subcover2">sale</a>
+        <a href="#" class="subcover2">Rent </a>
+        <a href="#" class="subcover2">Commercial</a>
+    </div><br>
+    <input type="text" class="input" placeholder="search by city or address">
+    <button class="button">SEARCH</button>
+</div>
+   </div>
+   <div id="section2">
+       <div class="blocks">
+           <img src="images/cover4.jpg" width="100%" height="100%">
+           <div class="section2para">
+           <h3>With Swimming Pool</h3>
+           <p>32 properties</p>
+        </div>
+       </div>
+       <div class="blocks">
+        <img src="images/cover5.jpg" width="100%" height="100%">
+        <div class="section2para">
+            <h3>Cozy Houses</h3>
+            <p>54 properties</p>
+         </div>
+    </div>
+    <div class="blocks">
+        <img src="images/cover6.jpg" width="100%" height="100%">
+        <div class="section2para">
+            <h3>Studio Apartment</h3>
+            <p>32 properties</p>
+         </div>
+    </div>
+    <div class="blocks">
+        <img src="images/cover7.jpg" width="100%" height="100%">
+        <div class="section2para">
+            <h3>Luxury Houses</h3>
+            <p>19 properties</p>
+         </div>
+    </div>
+
+   </div>
+   <div id="section3">
+     <h2>Recent Properties</h2>
+     <div id="dash"></div>
+     <div id="section3blocks">
+         <div class="blocks3">
+            <img src="images/cover8.jpg" width="100%" height="300px"> 
+            <h3>AVA Nob Hill</h3> 
+            <p id="p1">$1199.0/mon</p> 
+            <p id="p3"><span class="span">  . 1200sq ft </span><span class="span">  . 4Bedrooms </span><span class="span">  . 2 Bathroom</span></p>
+            <p id="p2">Ava Nob Hill includes studios and 1 and 2 bedroom apatrments that feature an urban inspired design that extends beyond your walls and y.</p>
+         </div>
+         <div class="blocks3">
+            <img src="images/cover2.jpg" width="100%" height="300px">             
+            <h3>Ashton San Francisco</h3> 
+            <p id="p1">$1599.0/mon</p> 
+            <p id="p3"><span class="span">  . 1200sq ft </span><span class="span">  . 4Bedrooms </span><span class="span">  . 2 Bathroom</span></p>
+
+            <p id="p2">Ava Nob Hill includes studios and 1 and 2 bedroom apatrments that feature an urban inspired design that extends beyond your walls and throughout the entire community.</p>
+
+
+         </div>
+         <div class="blocks3" id="b3">
+            <img src="images/cover4.jpg" width="100%" height="300px">  
+            <h3>The Presidio Residences</h3> 
+            <p id="p1">$2699.0/mon</p> 
+            <p id="p3"><span class="span">  . 1200sq ft </span><span class="span">  . 4Bedrooms </span><span class="span">  . 2 Bathroom</span></p>
+
+            <p id="p2">Ava Nob Hill includes studios and 1 and 2 bedroom apatrments that extends .</p>
+ 
+         </div>
+
+     </div>
+   </div>
+   <div id="section4">
+<div class="block4">
+<img src="images/cover9.jpg" width="100%" height="300px">
+<h3>Alchemy by Alta</h3> 
+<p id="p1">$1199.0/mon</p> 
+<p id="p3"><span class="span">  . 1200sq ft </span><span class="span">  . 4Bedrooms </span><span class="span">  . 2 Bathroom</span></p>
+<p id="p2">Ava Nob Hill includes studios and 1 and 2 bedroom apatrments .</p>
+
+</div>
+<div class="block4">
+    <img src="images/cover10.jpg" width="100%" height="300px">
+    <h3>Avalon at Mission Bay</h3> 
+    <p id="p1">$1199.0/mon</p> 
+    <p id="p3"><span class="span">  . 1200sq ft </span><span class="span">  . 4Bedrooms </span><span class="span">  . 2 Bathroom</span></p>
+    <p id="p2">Ava Nob Hill includes studios and 1 and 2 bedroom apatrments that feature an urban inspired design that extends beyond your walls and y.</p>
+
+    </div>
+    <div class="block4">
+        <img src="images/cover11.jpg" width="100%" height="300px">
+        <h3>Bayside Village Apartment</h3> 
+        <p id="p1">$1199.0/mon</p> 
+        <p id="p3"><span class="span">  . 1200sq ft </span><span class="span">  . 4Bedrooms </span><span class="span">  . 2 Bathroom</span></p>
+        <p id="p2">Ava Nob Hill includes studios and 1 and 2 bedroom apatrments that feature an urban .</p>
+
+        </div>
+   </div>
+   <button id="allproducts">View All Products</button>
+
+   <div id="section5">
+       <div id="realstate">
+           <h1>Real Estate Tools and Resources</h1>
+           <div id="dash"></div>
+              <p id="linefortools"></p>
+<div class="sec1">
+    <img src="images/image3.png" width="30px" height="30px">
+<h3>MORE LISTINGS</h3>
+<p>check upto 40% more houses for sale.see picture of your new life at  new place.see maps,markets,etc.</p>
+</div>
+<div class="sec1">
+    <img src="images/image3.png" width="30px" height="30px">
+<h3>TOP-RATED AGENTS</h3>
+<p>All our real Estate agents are professional in our neighbourhood, which are ready to help you find your new home.</p>
+</div>
+<div class="sec1">
+    <img src="images/image3.png" width="30px" height="30px">
+<h3>HOME VALUES</h3>
+<p>Wonna Know how much your new home will cost? see estimates for any neighbourhood and check prices for similar homes.</p>
+</div>
+</div>
+   </div>
+   <div id="Agentsection">
+       <h1>Real Estate agents</h1>
+       <div id="dash"></div>
+       <div id="Agents">
+           <div class="Agent1">
+               <img src="images/agent1.jpg" width="100%" height="200px">
+               <p><img src="images/image2.png" width="20px" height="20px">8709047833 <br><img src="images/image1.png" width="20px" height="20px">gautambgp98@gmail.com</p>
+
+           </div>
+           <div class="Agent1">
+            <img src="images/agent2.jpg" width="100%" height="200px">
+            <p><img src="images/image2.png" width="20px" height="20px">8709047833 <br><img src="images/image1.png" width="20px" height="20px">gautambgp98@gmail.com</p>
+
+        </div>
+        <div class="Agent1">
+            <img src="images/agent3.jpg" width="100%" height="200px">
+            <p><img src="images/image2.png" width="20px" height="20px">8709047833 <br><img src="images/image1.png" width="20px" height="20px">gautambgp98@gmail.com</p>
+
+        </div>
+        <div class="Agent1">
+            <img src="images/agent4.jpg" width="100%" height="200px">
+            <p><img src="images/image2.png" width="20px" height="20px">8709047833 <br><img src="images/image1.png" width="20px" height="20px">gautambgp98@gmail.com</p>
+
+        </div>
+
+       </div>
+      
+   </div>
+   <div>
+   <button id="allagents">View All Agents</button></div>
+   <div id="Testimonials">
+    
+<h1>Testimonials</h1>
+<div id="dash"></div>
+<div id="feedbacks">
+<div class="feeds">
+     <img src="images/agent1.jpg" width="50px" height="50px"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia corporis doloremque nam magnam asperiores. Nemo minus sint magnam repellendus obcaecati, neque delectus in ullam fuga ab impedit eligendi inventore veniam!<br><br><b>-Lisa Evans</b></p>
+</div>
+<div class="feeds">
+    
+    <img src="images/agent2.jpg" width="50px" height="50px"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia corporis doloremque nam magnam asperiores. Nemo minus sint magnam repellendus obcaecati, neque delectus in ullam fuga ab impedit eligendi inventore veniam!<br><br><b>-Nicholas Lane</b></p>
+    </div>
+    <div class="feeds">
+         <img src="images/agent3.jpg" width="50px" height="50px"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia corporis doloremque nam magnam asperiores. Nemo minus sint magnam repellendus obcaecati, neque delectus in ullam fuga ab impedit eligendi inventore veniam!<br><br><b>-Ethan Dean</b></p>
+        </div>
+</div>
+   </div>
+   <div id="contact">
+       <h1>
+           Get In Touch
+       </h1>
+       <div id="dash"></div>
+       <div class="form">
+<form>
+    <input type="text" placeholder="First Name" class="inp">
+    <input type="text" placeholder="Last Name"><br><br>
+    <input type="number" placeholder="Phone:" class="inp">
+    <input type="email" placeholder="E-mail"><br><br>
+    <textarea placeholder="Message"></textarea><br>
+    <br>
+    <button id="message">Send Message</button>
+</form>
+       </div>
+   </div>
+   <div id="footer">
+<div class="foot foot1">
+    <h2>INTENSE</h2>
+    <h4>Feel the power of future</h4>
+<a href="#"><img src="images/linkdin.png" width="20px" height="20px"></a>
+<a href="#"><img src="images/google.png"  width="20px" height="20px"></a>
+<a href="#"><img src="images/face.png"  width="20px" height="20px"></a>
+<a href="#"><img src="images/image2.png"  width="20px" height="20px"></a>
+<br>
+</div>
+<div class="foot foot2">
+<h4>NEWSLETTER</h4>
+<P>keep up with the latest company news and events.Enter your email and subscribe to our newsletter.</P>
+<br>
+<img src="images/image1.png"  id="email" width="20px" height="20px">
+<input type="email" placeholder="Type yor email">
+<button id="subscribe">SUBSCRIBE</button>
+</div>
+<div class="foot foot3">
+    <h4>USEFUL LINKS</h4>
+    <ul>
+        <li>properties</li>
+        <li>Amentities</li>
+        <li>Rental</li>
+        <li>Mortgages</li>
+        <li>Agents</li>
+    </ul>
+
+</div>
+<div class="foot foot4">
+<h4>LATEST NEWS</h4>
+<h5>07/07/2021</h5>
+<h4>
+    Top 10 apatrmentsin LA
+</h4>
+<h5>07/07/2021</h5>
+<h4>Choosing a Rental Property</h4>
+<h5>07/07/2021</h5>
+<h4>Features of Mortgage Loan</h4>
+</div>
+
+   </div>
+   <div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14435.51331204551!2d86.97241869999999!3d25.24102275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1633282706221!5m2!1sen!2sin" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+   </div>
+   
+</body>
+</html>
